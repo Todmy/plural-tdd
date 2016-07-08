@@ -1,0 +1,15 @@
+<div>
+  <br>
+  <ol class="breadcrumb">
+    <li><a ng-href="#/">HOME</a></li>
+    <li>Results</li>
+  </ol>
+
+  <uib-accordion>
+    <uib-accordion-group ng-repeat="result in vm.results" is-open="vm.result.open">
+      <uib-accordion-heading>
+        {{result.Title}} <i class="pull-right glyphicon" ng-class="'glyphicon-chevron-' + vm.result.open ? 'down' : 'right'"></i>
+      </uib-accordion-heading>
+    </uib-accordion-group>
+  </uib-accordion>
+</div>
